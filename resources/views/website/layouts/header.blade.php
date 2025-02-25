@@ -5,7 +5,7 @@
             <div class="outer-box">
                 <div class="logo-box mx-1 {{ app()->getLocale() === 'ar' ? 'rtl-logo' : 'ltr-logo' }}">
                     <figure class="logo">
-                        <a href="/"><img src="{{ asset('assets/website/images/Logo_master.png') }}" alt="logo"/></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/website/images/Logo_master.png') }}" alt="logo"/></a>
                     </figure>
                 </div>
                 <div class="menu-area clearfix">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    
+
     <!--sticky Header-->
     <div class="sticky-header">
         <div class="large-container">
