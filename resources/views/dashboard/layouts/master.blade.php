@@ -24,7 +24,7 @@
     <meta name="description" content=""/>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/dashboard/assets/img/Fav_logo.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/website/images/Logo_master.png') }}" />
     @include('dashboard.layouts.main-head')
 
     @yield('css')

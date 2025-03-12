@@ -10,13 +10,15 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget logo-widget">
                         <figure class="footer-logo">
-                            <a href="index-2.html"><img src="{{ asset('assets/website/images/LOGO_Sticky.png') }}" alt="" /></a>
+                            <a href="javascript:void(0)"><img style="width: 150px"
+                                                              src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}"
+                                                              alt=""/></a>
                         </figure>
                         <div class="text">
                             <p>
-                                انطلقت قدرة العقارية لتقديم مجموعة واسعة من الخدمات
-                                العقارية عالية الجودة والتي تتوافق مع افضل المعايير
-                                والممارسات لتواكب رؤية الممكلة 2030 نحو مستقبل عقاري مزدهر
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, molestiae nesciunt
+                                nobis placeat quod voluptate. Asperiores dicta dolores earum exercitationem expedita
+                                laudantium libero odit quod sapiente voluptates. Doloremque, dolores fuga.
                             </p>
                         </div>
                         <!-- <div class="location-box">
@@ -36,12 +38,12 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list clearfix">
-                                <li><a href="index-2.html">التسويق العقاري</a></li>
-                                <li><a href="index-2.html">ادارة العقارات</a></li>
-                                <li><a href="index-2.html">ادارة المرافق</a></li>
-                                <li><a href="index-2.html">ادارة العقارات</a></li>
-                                <li><a href="index-2.html">الاستشارات العقارية</a></li>
-                                <li><a href="index-2.html">المزادات العقارية</a></li>
+                                <li><a href="#">التسويق العقاري</a></li>
+                                <li><a href="#">ادارة العقارات</a></li>
+                                <li><a href="#">ادارة المرافق</a></li>
+                                <li><a href="#">ادارة العقارات</a></li>
+                                <li><a href="#">الاستشارات العقارية</a></li>
+                                <li><a href="#">المزادات العقارية</a></li>
                             </ul>
                         </div>
                     </div>
@@ -53,11 +55,11 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list clearfix">
-                                <li><a href="index-2.html">الرئيسية</a></li>
-                                <li><a href="index-2.html">من نحن</a></li>
-                                <li><a href="index-2.html">اهم المقالات</a></li>
-                                <li><a href="index-2.html">العروض العقارية</a></li>
-                                <li><a href="index-2.html">للتوظيف</a></li>
+                                <li><a href="#">الرئيسية</a></li>
+                                <li><a href="#">من نحن</a></li>
+                                <li><a href="#">اهم المقالات</a></li>
+                                <li><a href="#">العروض العقارية</a></li>
+                                <li><a href="#">للتوظيف</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,35 +70,34 @@
                             <h3>فروعنا</h3>
                         </div>
                         <div class="location-box">
-                            <p>المكتب الرئيسي - الرياض - حي المروج</p>
+                            <p>المكتب الرئيسي السعودية </p>
                         </div>
-                        <div class="location-box">
-                            <p>المكتب الفرعي - الرياض - حي السلي</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom clearfix centred">
             <div class="copyright">
-                <p>الحقوق محفوظة لشركة قدرة العقارية &copy; 2025</p>
+                {{--                <p>   &copy; 2025</p>--}}
+                <p>البرمجة والتصميم بوراسطة <a target="_blank" href="abdallh-elzayat.me"> عبدالله الزيات</a></p>
             </div>
 
             <ul class="footer-social">
                 <li>
-                    <a href="index-2.html"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
                 </li>
                 <li>
-                    <a href="index-2.html"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
                 </li>
                 <li>
-                    <a href="index-2.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                    <a href="index-2.html"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="index-2.html"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </li>
             </ul>
         </div>

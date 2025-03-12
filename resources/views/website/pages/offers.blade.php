@@ -40,7 +40,7 @@
 
         <nav class="menu-box" style="direction: rtl; text-align: right">
             <div class="nav-logo">
-                <a href="index-2.html"><img src="{{ asset('assets/website/images/LOGO.png') }}" alt="" title=""/></a>
+                <a href="{{ route('home') }}"><img style="width: 80px" src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" alt="" title=""/></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -48,25 +48,17 @@
             <div class="contact-info">
                 <h4>للتواصل معنا</h4>
                 <ul>
-                    <li>الرياض - حي المروج</li>
-                    <li>الرياض - حي السلي</li>
+                    <li>الرياض</li>
+
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
             <div class="social-links">
                 <ul class="clearfix">
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-x"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-facebook-square"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-instagram"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-youtube"></span></a>
-                    </li>
+                    <li><a href="#"><span class="fab fa-x"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
                 </ul>
             </div>
         </nav>
@@ -74,7 +66,7 @@
     <!-- End Mobile Menu -->
 
 
-    <div class="container my-5" style="padding-top: 100px;">
+    <div class="container my-5" style="padding-top: 150px;">
         <nav style="--bs-breadcrumb-divider: '>'; background-color: #f9f9f9; padding: 10px; border-radius: 5px;"
              aria-label="breadcrumb">
             <ol class="breadcrumb" style=" margin: 0; background-color: transparent; padding: 0;">
@@ -96,7 +88,8 @@
                         <select class="wide" name="o_type">
                             <option data-display="حالة العقار" value="">حالة العقار</option>
                             @foreach(\App\Enums\OfferType::cases() as $offerType)
-                                <option @selected(request('o_type') == $offerType->value) value="{{ $offerType->value }}">{{ $offerType->label() }}</option>
+                                <option
+                                    @selected(request('o_type') == $offerType->value) value="{{ $offerType->value }}">{{ $offerType->label() }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -107,7 +100,8 @@
                         <select class="wide" name="op_type">
                             <option selected value="">نوع العقار</option>
                             @foreach(\App\Enums\PropertyType::cases() as $propertyType)
-                                <option @selected(request('op_type') == $propertyType->value) value="{{ $propertyType->value }}">{{ $propertyType->label() }}</option>
+                                <option
+                                    @selected(request('op_type') == $propertyType->value) value="{{ $propertyType->value }}">{{ $propertyType->label() }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -119,16 +113,18 @@
                         <select class="wide" name="op_location">
                             <option selected value="">الموقع</option>
                             @foreach(\App\Enums\PropertyLocations::cases() as $propertyLocation)
-                                <option @selected(request('op_location') == $propertyLocation->value) value="{{ $propertyLocation->value }}">{{ $propertyLocation->label() }}</option>
+                                <option
+                                    @selected(request('op_location') == $propertyLocation->value) value="{{ $propertyLocation->value }}">{{ $propertyLocation->label() }}</option>
                             @endforeach
                         </select>
                     </div>
                 </div>
                 <!-- Price Range -->
                 <div class="col-lg-9 col-md-4 col-sm-6 mt-3">
-                    <input type="number" value="{{ request('price') }}"  class="form-control shadow-sm" placeholder="السعر"
+                    <input type="number" value="{{ request('price') }}" class="form-control shadow-sm"
+                           placeholder="السعر"
                            name="price"
-                            id="priceRangeInput">
+                           id="priceRangeInput">
                 </div>
 
                 <!-- Search Button -->
@@ -144,8 +140,8 @@
                         <div class="inner-box bg-color-1">
                             <div class="image-box">
                                 <figure class="image">
-{{--                                    <a href="blog-details.html"><img--}}
-{{--                                            src="{{asset('assets/website/images/news/news-1.jpg')}}" alt=""/></a>--}}
+                                    {{--                                    <a href="blog-details.html"><img--}}
+                                    {{--                                            src="{{asset('assets/website/images/news/news-1.jpg')}}" alt=""/></a>--}}
 
                                     <a href="{{ route('offers.details', $offer) }}"><img
                                             src="{{ $offer->getThumbUrl() }}" alt=""/></a>
@@ -159,9 +155,10 @@
                                     {!! $offer->short_description !!}
                                 </p>
                                 <h3>
-{{--                                    <a href="blog-details.html">200,000 ريال / سنوياً</a>--}}
+                                    {{--                                    <a href="blog-details.html">200,000 ريال / سنوياً</a>--}}
 
-                                    <a href="{{ route('offers.details', $offer) }}">{{ $offer->price }} ريال / {{ $offer->price_type->label() }}</a>
+                                    <a href="{{ route('offers.details', $offer) }}">{{ $offer->price }} ريال
+                                        / {{ $offer->price_type->label() }}</a>
 
                                 </h3>
                                 <p

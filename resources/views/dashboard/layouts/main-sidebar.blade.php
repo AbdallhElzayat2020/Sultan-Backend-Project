@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
         <a href="{{ route('admin.dashboard') }}" class="app-brand-link">
-            <span class="app-brand-text demo menu-text fw-bold">QUDRAH</span>
+            <span class="app-brand-text demo menu-text fw-bold">Logo</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -14,35 +14,7 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
-        {{--        <li class="menu-item  open">--}}
-        {{--            <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-        {{--                <i class="menu-icon tf-icons ti ti-smart-home"></i>--}}
-        {{--                <div data-i18n="Dashboards">Dashboards</div>--}}
-        {{--                <div class="badge bg-label-primary rounded-pill ms-auto">3</div>--}}
-        {{--            </a>--}}
-        {{--            <ul class="menu-sub">--}}
-        {{--                <li class="menu-item active">--}}
-        {{--                    <a href="#" class="menu-link">--}}
-        {{--                        <div data-i18n="Analytics">Analytics</div>--}}
-        {{--                    </a>--}}
-        {{--                </li>--}}
-        {{--                <li class="menu-item">--}}
-        {{--                    <a href="#" class="menu-link">--}}
-        {{--                        <div data-i18n="CRM">CRM</div>--}}
-        {{--                    </a>--}}
-        {{--                </li>--}}
-        {{--                <li class="menu-item">--}}
-        {{--                    <a href="#" class="menu-link">--}}
-        {{--                        <div data-i18n="eCommerce">eCommerce</div>--}}
-        {{--                    </a>--}}
-        {{--                </li>--}}
-        {{--            </ul>--}}
-        {{--        </li>--}}
 
-        <!-- Apps & Pages -->
-        {{--        <li class="menu-header small text-uppercase">--}}
-        {{--            <span class="menu-header-text">Home</span>--}}
-        {{--        </li>--}}
 
         <li class="menu-item {{ request()->is('admin/dashboard') ? 'active' : '' }}">
             <a href="{{route('admin.dashboard')}}" class="menu-link">
@@ -123,37 +95,37 @@
             </li>
         @endcan
 
-        @can('view-opportunities')
-            <li class="menu-item {{ request()->routeIs('admin.opportunities.*') ? 'active' : '' }}">
-                <a href="{{route('admin.opportunities.index')}}" class="menu-link">
-                    <i class="menu-icon tf-icons ti ti-color-swatch"></i>
-                    <div data-i18n="Home">الفرص</div>
-                </a>
-            </li>
-        @endcan
+{{--        @can('view-opportunities')--}}
+{{--            <li class="menu-item {{ request()->routeIs('admin.opportunities.*') ? 'active' : '' }}">--}}
+{{--                <a href="{{route('admin.opportunities.index')}}" class="menu-link">--}}
+{{--                    <i class="menu-icon tf-icons ti ti-color-swatch"></i>--}}
+{{--                    <div data-i18n="Home">الفرص</div>--}}
+{{--                </a>--}}
+{{--            </li>--}}
+{{--        @endcan--}}
 
-        @canany(['view-users', 'view-roles'])
-            <li class="menu-header small text-uppercase">
-                <span class="menu-header-text">الإعدادات</span>
-            </li>
+{{--        @canany(['view-users', 'view-roles'])--}}
+{{--            <li class="menu-header small text-uppercase">--}}
+{{--                <span class="menu-header-text">الإعدادات</span>--}}
+{{--            </li>--}}
 
-            @can('view-users')
-                <li class="menu-item {{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
-                    <a href="{{route('admin.users.index')}}" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-users"></i>
-                        <div data-i18n="Home">المستخدمين</div>
-                    </a>
-                </li>
-            @endcan
+{{--            @can('view-users')--}}
+{{--                <li class="menu-item {{ request()->routeIs('admin.users.*') ? 'active' : '' }}">--}}
+{{--                    <a href="{{route('admin.users.index')}}" class="menu-link">--}}
+{{--                        <i class="menu-icon tf-icons ti ti-users"></i>--}}
+{{--                        <div data-i18n="Home">المستخدمين</div>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--            @endcan--}}
 
-            @can('view-roles')
-                <li class="menu-item {{ request()->routeIs('admin.roles.*') ? 'active' : '' }}">
-                    <a href="{{route('admin.roles.index')}}" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-settings"></i>
-                        <div data-i18n="Home">الادوار</div>
-                    </a>
-                </li>
-            @endcan
-        @endcanany
+{{--            @can('view-roles')--}}
+{{--                <li class="menu-item {{ request()->routeIs('admin.roles.*') ? 'active' : '' }}">--}}
+{{--                    <a href="{{route('admin.roles.index')}}" class="menu-link">--}}
+{{--                        <i class="menu-icon tf-icons ti ti-settings"></i>--}}
+{{--                        <div data-i18n="Home">الادوار</div>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--            @endcan--}}
+{{--        @endcanany--}}
     </ul>
 </aside>

@@ -40,7 +40,7 @@
 
         <nav class="menu-box" style="direction: rtl; text-align: right">
             <div class="nav-logo">
-                <a href="index-2.html"><img src="{{ asset('assets/website/images/LOGO.png') }}" alt="" title=""/></a>
+                <a href="{{ route('home') }}"><img style="width: 80px" src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" alt="" title=""/></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -48,25 +48,17 @@
             <div class="contact-info">
                 <h4>للتواصل معنا</h4>
                 <ul>
-                    <li>الرياض - حي المروج</li>
-                    <li>الرياض - حي السلي</li>
+
+                    <li>الرياض</li>
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
             <div class="social-links">
                 <ul class="clearfix">
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-x"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-facebook-square"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-instagram"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-youtube"></span></a>
-                    </li>
+                    <li><a href="#"><span class="fab fa-x"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
                 </ul>
             </div>
         </nav>
@@ -225,43 +217,43 @@
 
 
     <!-- clients-section -->
-    <section class="clients-section p_relative sec-pad centred" style="direction: ltr;">
-        <div class="large-container">
-            <div class="sec-title mb_30">
-                <h2 class="p_relative d_block fs_42 lh_52 mb_45 fw_exbold" style="color: #001D00;">عملاء يثقون بنا
-                </h2>
-                <p style="color: #526652;">تطور قدرةالعقارية شراكاتها الاستراتيجية في مختلف القطاعات لتعزز قدرتها
-                    وتوسيع نطاقها</p>
-            </div>
-            <ul class="six-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </section>
+    {{--    <section class="clients-section p_relative sec-pad centred" style="direction: ltr;">--}}
+    {{--        <div class="large-container">--}}
+    {{--            <div class="sec-title mb_30">--}}
+    {{--                <h2 class="p_relative d_block fs_42 lh_52 mb_45 fw_exbold" style="color: #001D00;">عملاء يثقون بنا--}}
+    {{--                </h2>--}}
+    {{--                <p style="color: #526652;">تطور قدرةالعقارية شراكاتها الاستراتيجية في مختلف القطاعات لتعزز قدرتها--}}
+    {{--                    وتوسيع نطاقها</p>--}}
+    {{--            </div>--}}
+    {{--            <ul class="six-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">--}}
+    {{--                <li>--}}
+    {{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+    {{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>--}}
+    {{--                    </figure>--}}
+    {{--                </li>--}}
+    {{--                <li>--}}
+    {{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+    {{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>--}}
+    {{--                    </figure>--}}
+    {{--                </li>--}}
+    {{--                <li>--}}
+    {{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+    {{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>--}}
+    {{--                    </figure>--}}
+    {{--                </li>--}}
+    {{--                <li>--}}
+    {{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+    {{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>--}}
+    {{--                    </figure>--}}
+    {{--                </li>--}}
+    {{--                <li>--}}
+    {{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+    {{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a>--}}
+    {{--                    </figure>--}}
+    {{--                </li>--}}
+    {{--            </ul>--}}
+    {{--        </div>--}}
+    {{--    </section>--}}
     <!-- clients-section end -->
 
     <section class="contact-style-three p_relative pt_110 pb_120" style="direction: rtl">
@@ -316,8 +308,7 @@
                                         <input class="form-check-input " type="checkbox" value="checked"
                                                id="flexCheckChecked" checked>
                                         <label class="form-check-label mr-3" for="flexCheckChecked">
-                                            أقر بأنني قد قرأت <a href="#">الشروط والاحكام</a> الخاصة بشركة قدرة
-                                            العقارية
+                                            أقر بأنني قد قرأت <a href="#">الشروط والاحكام</a> الخاصة
                                         </label>
                                     </div>
                                 </div>
@@ -341,7 +332,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>البريد الالكتروني</h3>
-                    <p>info@qudraha.com</p>
+                    <p>info@trest.com</p>
                 </div>
 
                 <!-- Card 2 -->
@@ -350,7 +341,7 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>ارقام الهاتف</h3>
-                    <p>0115120188<br>0112216636<br>0541111426</p>
+                    <p>543545<br>4535435<br>435454</p>
                 </div>
 
                 <!-- Card 3 -->
@@ -360,8 +351,7 @@
                     </div>
                     <h3>فروع الشركة</h3>
                     <p>
-                        الفرع الرئيسي - الرياض - حي المروج<br>
-                        المكتب الفرعي - الرياض - حي السلي
+                        fsdfsfsdfsd
                     </p>
                 </div>
             </div>

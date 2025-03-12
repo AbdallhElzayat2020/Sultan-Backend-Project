@@ -1,11 +1,13 @@
-<header class="main-header header-style-one" style="background-color: #112e11;">
+<header class="main-header header-style-one" style="background-color: #000000;">
     <!-- header-lower -->
     <div class="header-lower">
         <div class="large-container">
             <div class="outer-box">
                 <div class="logo-box mx-1 {{ app()->getLocale() === 'ar' ? 'rtl-logo' : 'ltr-logo' }}">
                     <figure class="logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/website/images/Logo_master.png') }}" alt="logo"/></a>
+                        <a href="{{route('home')}}"><img style="width: 100px"
+                                                         src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}"
+                                                         alt="logo"/></a>
                     </figure>
                 </div>
                 <div class="menu-area clearfix">
@@ -41,22 +43,6 @@
 
                                     <li class="#"><a href="{{ route('contact') }}">تواصل معنا</a></li>
 
-                                    <li class="#"><a href="{{ route('blogs') }}">المدونة</a></li>
-
-                                    <li class=" dropdown">
-                                        <a>
-                                            التدريب والتوظيف
-                                            <i class="fas fa-chevron-down arrow_mob"></i>
-                                        </a>
-                                        <ul>
-                                            <li><a href="{{ route('internship') }}">فرص
-                                                    التدريب</a>
-                                            </li>
-                                            <li><a href="{{ route('apply') }}">فرص التوظيف</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
                                     <li class="">
                                         <a href="{{ route('services') }}">خدماتنا</a>
                                     </li>
@@ -85,20 +71,6 @@
                                     <li class="">
                                         <a href="{{ route('services') }}">خدماتنا</a>
                                     </li>
-                                    <li class=" dropdown">
-                                        <a>
-                                            التدريب والتوظيف
-                                            <i class="fas fa-chevron-down arrow_mob"></i>
-                                        </a>
-                                        <ul>
-                                            <li><a href="{{ route('internship') }}">فرص
-                                                    التدريب</a>
-                                            </li>
-                                            <li><a href="{{ route('apply') }}">فرص التوظيف</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="#"><a href="{{ route('blogs') }}">المدونة</a></li>
                                     <li class="#"><a href="{{ route('contact') }}">تواصل معنا</a></li>
 
                                     <li class=" dropdown">
@@ -127,7 +99,7 @@
                 </div>
                 <div class="nav-right">
                     <div class="support-box">
-                        <a href="tel:+966541111426" class="theme-btn btn-one">تواصل معنا</a>
+                        <a href="tel:+" class="theme-btn btn-one">تواصل معنا</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +112,7 @@
             <div class="outer-box">
                 <div class="logo-box">
                     <figure class="logo">
-                        <a href="{{route('home')}}"><img src="{{ asset('assets/website/images/Logo_master.png') }}"
+                        <a href="{{route('home')}}"><img src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}"
                                                          alt="LOGO"/></a>
                     </figure>
                 </div>
@@ -152,7 +124,7 @@
                 <div class="nav-right">
                     <div class="support-box">
                         <!-- <div class="icon-box"><i class="far fa-phone"></i></div> -->
-                        <a href="tel:+966541111426" class="theme-btn btn-one">تواصل معنا</a>
+                        <a href="tel:+" class="theme-btn btn-one">تواصل معنا</a>
 
                         <!-- <h3><a href="tel:+966541111426">تواصل معنا</a></h3> -->
                     </div>

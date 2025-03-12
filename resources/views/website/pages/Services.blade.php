@@ -40,7 +40,7 @@
 
         <nav class="menu-box" style="direction: rtl; text-align: right">
             <div class="nav-logo">
-                <a href="index-2.html"><img src="{{ asset('assets/website/images/LOGO.png') }}" alt="" title=""/></a>
+                <a href="{{ route('home') }}"><img style="width: 80px" src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" alt="" title=""/></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -48,25 +48,17 @@
             <div class="contact-info">
                 <h4>للتواصل معنا</h4>
                 <ul>
-                    <li>الرياض - حي المروج</li>
-                    <li>الرياض - حي السلي</li>
+
+                    <li>الرياض</li>
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
             <div class="social-links">
                 <ul class="clearfix">
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-x"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-facebook-square"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-instagram"></span></a>
-                    </li>
-                    <li>
-                        <a href="index-2.html"><span class="fab fa-youtube"></span></a>
-                    </li>
+                    <li><a href="#"><span class="fab fa-x"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
                 </ul>
             </div>
         </nav>
@@ -74,7 +66,7 @@
     <!-- End Mobile Menu -->
 
     <!-- sidebar-page-container -->
-    <section class="sidebar-page-container sec-pad" style="direction: rtl; padding-top: 150px;">
+    <section class="sidebar-page-container sec-pad" style="direction: rtl; padding-top: 180px;">
         <div class="auto-container">
 
             <nav style="--bs-breadcrumb-divider: '>'; background-color: #f9f9f9; padding: 10px; border-radius: 5px;"
@@ -96,8 +88,6 @@
         <div class="intro text-center mb-5">
             <div class="heading text-center font-weight-bold mb-3" style="color: #001D00; font-size: 40px;">خدماتنا
             </div>
-            <p style="color: #526652;">تقدم <span class="gold-color text-center">“قدرة العقارية”</span> مجموعة
-                متنوعة من الخدمات بإسلوب حديث وإحترافي بخبرات متنوعة لتلبية إحتياجات مُختلف شرائح القطاع العقاري</p>
         </div>
         <div class="large-container">
             <div class="row clearfix d-flex align-items-center justify-content-center">
@@ -126,23 +116,21 @@
 
 
     <!-- clients-section -->
-    <section class="clients-section p_relative sec-pad centred" style="direction: ltr;">
-        <div class="large-container">
-            <div class="sec-title mb_30">
-                <h2 class="p_relative d_block fs_42 lh_52 mb_45 fw_exbold" style="color: #001D00;">عملاء يثقون بنا
-                </h2>
-                <p style="color: #526652;">‫تطور ‬‫قدرة‬ ‫العقارية‬ ‫شراكاتها‬ ‫‬ الا‫ستراتيجية ‬‫في‬ ‫مختلف‬
-                    ‫القطاعات‬ ‫لتعزز‬ ‫قدرتها‬ ‫وتوسيع‬ ‫نطاقها‬</p>
-            </div>
-            <ul class="six-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <li>
-                    <figure class="clients-logo"><a href="index-3.html"><img
-                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a></figure>
-                </li>
+{{--    <section class="clients-section p_relative sec-pad centred" style="direction: ltr;">--}}
+{{--        <div class="large-container">--}}
+{{--            <div class="sec-title mb_30">--}}
+{{--                <h2 class="p_relative d_block fs_42 lh_52 mb_45 fw_exbold" style="color: #001D00;">عملاء يثقون بنا--}}
+{{--                </h2>--}}
+{{--            </div>--}}
+{{--            <ul class="six-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">--}}
+{{--                <li>--}}
+{{--                    <figure class="clients-logo"><a href="index-3.html"><img--}}
+{{--                                src="{{asset('assets/website/images/clients/clients-1.png')}}" alt=""></a></figure>--}}
+{{--                </li>--}}
 
-            </ul>
-        </div>
-    </section>
+{{--            </ul>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <!-- clients-section end -->
 
 
