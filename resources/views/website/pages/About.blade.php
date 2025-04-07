@@ -64,7 +64,7 @@
     <!-- End Mobile Menu -->
 
     <section class="page-title p_relative centred"
-             style="background-image: url('{{asset('assets/website/images/banner/banner-1.jpg')}}');
+             style="background-image: url('{{asset('assets/website/images/banner_new.png')}}');
                 background-position: center;
                 display: flex;
                 align-items: center;
@@ -171,6 +171,7 @@
         </div>
         <div class="large-container">
             <div class="row clearfix">
+
                 <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
                     <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
                          data-wow-duration="1500ms">
@@ -182,7 +183,27 @@
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                     خبرة ممتدة ومعرفة متعمقة بالسوق العقاري المحلي.
+                                    خبرة كبيرة بالسوق
+                                </a>
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
+                    <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
+                         data-wow-duration="1500ms">
+                        <div
+                            class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
+                            <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
+                                <img src="{{ asset('assets/website/images/المسؤلية_والثقة.png') }}"
+                                     alt="الابتكار_والتطوير"/>
+                            </div>
+                            <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
+                                <a href="javascript:void(0)" class="d_iblock color_black hov_color"
+                                   style="color: #526652 !important">
+                                    مرخصة ومعتمدة
                                 </a>
                             </h3>
 
@@ -202,27 +223,7 @@
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                     قاعدة عملاء وشبكة شراكات قوية.
-                                </a>
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
-                    <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
-                         data-wow-duration="1500ms">
-                        <div
-                            class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
-                            <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
-                                <img src="{{ asset('assets/website/images/الابتكار_والتطوير.png') }}"
-                                     alt="الابتكار_والتطوير"/>
-                            </div>
-                            <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
-                                <a href="javascript:void(0)" class="d_iblock color_black hov_color"
-                                   style="color: #526652 !important">
-                                     التزام تام بالشفافية والسرعة في تنفيذ المعاملات.
+                                    الابتكار والتطوير
                                 </a>
                             </h3>
                         </div>
@@ -234,13 +235,13 @@
                         <div
                             class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
                             <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
-                                <img src="{{ asset('assets/website/images/الابتكار_والتطوير.png') }}"
+                                <img src="{{ asset('assets/website/images/المسؤلية_والثقة.png') }}"
                                      alt="الابتكار_والتطوير"/>
                             </div>
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                     استخدام أحدث التقنيات وأدوات التسويق العقاري.
+                                    المسؤلية والثقة
                                 </a>
                             </h3>
                         </div>

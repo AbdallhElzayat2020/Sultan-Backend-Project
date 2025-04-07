@@ -5,9 +5,9 @@
             <div class="outer-box">
                 <div class="logo-box mx-1 {{ app()->getLocale() === 'ar' ? 'rtl-logo' : 'ltr-logo' }}">
                     <figure class="logo">
-                        <a href="{{route('home')}}"><img style="width: 100px"
-                                                         src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}"
-                                                         alt="logo"/></a>
+                        <a href="{{route('home')}}">
+                            <img style="width: 100px" src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" alt="logo"/>
+                        </a>
                     </figure>
                 </div>
                 <div class="menu-area clearfix">
@@ -112,8 +112,9 @@
             <div class="outer-box">
                 <div class="logo-box">
                     <figure class="logo">
-                        <a href="{{route('home')}}"><img src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}"
-                                                         alt="LOGO"/></a>
+                        <a href="{{route('home')}}">
+                            <img src="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" alt="LOGO"/>
+                        </a>
                     </figure>
                 </div>
                 <div class="menu-area clearfix">

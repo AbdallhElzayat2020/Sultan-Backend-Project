@@ -69,14 +69,14 @@
 
     <!-- banner-section -->
     <section class="page-title p_relative pt_250 pb_170 centred"
-             style="background-image: url({{asset('assets/website/images/banner/banner-1.jpg')}});background-position: center; height: 620px;">
+             style="background-image: url({{asset('assets/website/images/banner_new.png')}}); height: 650px; background-position: center">
         <div class="bg-layer p_absolute r_100 t_0">
         </div>
         <div class="large-container">
             <div class="content-box p_relative d_block z_5">
-                <div class="title mb_25">
-                    <h3 class="color_white d_block fs_30 lh_76 mb_35 fw_exbold">
-                        Title Here
+                <div class="title mt_40">
+                    <h3 class="color_white d_block fs_30 fw_exbold">
+                       مكتب هضاب عريض للخدمات العقارية
                     </h3>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                     <div class="image-box p_relative d_block pr_120 pb_150">
                         <figure class="image image-1 p_relative d_block mb-2 z_1 paroller"><img
-                                src="{{ asset('assets/website/images/hedab/1.png') }}" alt="qudrah IMG">
+                                src="{{ asset('assets/website/images/hedab_master/1.png') }}" alt="qudrah IMG">
                         </figure>
                     </div>
                 </div>
@@ -382,41 +382,41 @@
     </section>
 
     <!-- Blogs -->
-    {{--    @if($blogs->count())--}}
-    {{--        <section class="news-section p_relative sec-pad">--}}
-    {{--            <div class="large-container">--}}
-    {{--                <div class="sec-title centred mb_55">--}}
-    {{--                    <h2 class="p_relative d_block fs_50 lh_60 fw_exbold">مقالات تُفيدك</h2>--}}
-    {{--                </div>--}}
-    {{--                <div class="row clearfix">--}}
-    {{--                    @foreach($blogs as $blog)--}}
-    {{--                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">--}}
-    {{--                            <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms"--}}
-    {{--                                 data-wow-duration="1500ms">--}}
-    {{--                                <div class="inner-box bg-color-1" style="text-align: start;">--}}
-    {{--                                    <div class="image-box">--}}
-    {{--                                        <figure class="image">--}}
-    {{--                                            <a href="{{ route('blogs.details', $blog) }}">--}}
-    {{--                                                <img src="{{ $blog->getThumbUrl() }}" alt="">--}}
-    {{--                                            </a>--}}
-    {{--                                        </figure>--}}
-    {{--                                        <span--}}
-    {{--                                            class="post-date">{{ strtoupper($blog->created_at->format('d M Y')) }}</span>--}}
-    {{--                                        --}}{{--                                    <span class="post-date">23 JUN 2021</span>--}}
-    {{--                                    </div>--}}
-    {{--                                    <div class="lower-content">--}}
-    {{--                                        <h3><a href="{{ route('blogs.details', $blog) }}">{{ $blog->title }}</a>--}}
-    {{--                                        </h3>--}}
-    {{--                                        <p>{!! $blog->excerpt !!}</p>--}}
-    {{--                                    </div>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    @endforeach--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-    {{--        </section>--}}
-    {{--    @endif--}}
+        @if($blogs->count())
+            <section class="news-section p_relative sec-pad">
+                <div class="large-container">
+                    <div class="sec-title centred mb_55">
+                        <h2 class="p_relative d_block fs_50 lh_60 fw_exbold">مقالات تُفيدك</h2>
+                    </div>
+                    <div class="row clearfix">
+                        @foreach($blogs as $blog)
+                            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                                <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms"
+                                     data-wow-duration="1500ms">
+                                    <div class="inner-box bg-color-1" style="text-align: start;">
+                                        <div class="image-box">
+                                            <figure class="image">
+                                                <a href="{{ route('blogs.details', $blog) }}">
+                                                    <img src="{{ $blog->getThumbUrl() }}" alt="">
+                                                </a>
+                                            </figure>
+                                            <span
+                                                class="post-date">{{ strtoupper($blog->created_at->format('d M Y')) }}</span>
+                                                                                <span class="post-date">23 JUN 2021</span>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3><a href="{{ route('blogs.details', $blog) }}">{{ $blog->title }}</a>
+                                            </h3>
+                                            <p>{!! $blog->excerpt !!}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        @endif
     <!-- /Blogs -->
 
 

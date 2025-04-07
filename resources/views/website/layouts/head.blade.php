@@ -1,7 +1,7 @@
 @if(app()->getLocale() === 'ar')
 
     <!-- Fav Icon -->
-    <link rel="icon" href="{{ asset('assets/website/images/Logo_master.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link
@@ -38,7 +38,7 @@
 @else
 
     <!-- Fav Icon -->
-    <link rel="icon" href="{{ asset('assets/website/images/Fav_logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/website/images/hedab_master/logo_main.png') }}" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link
