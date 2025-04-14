@@ -68,7 +68,6 @@
                         <div class="location-box">
                             <a href="https://maps.app.goo.gl/7Ji4FBaLXucCG9DX8" target="_blank">موقعنا</a>
                         </div>
-
                     </div>
                 </div>
             </div>
