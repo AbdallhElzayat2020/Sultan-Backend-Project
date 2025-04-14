@@ -76,7 +76,7 @@
             <div class="content-box p_relative d_block z_5">
                 <div class="title mt_40">
                     <h3 class="color_white d_block fs_30 fw_exbold">
-                       مكتب هضاب عريض للخدمات العقارية
+                        مكتب هضاب عريض للخدمات العقارية
                     </h3>
                 </div>
             </div>
@@ -92,16 +92,12 @@
                     <div class="content_block_5">
                         <div class="content-box p_relative d_block">
                             <div class="sec-title mb_45">
+                                <h2 style="text-align: start">من نحن</h2>
                                 <h2 class="p_relative d_block fs_20 lh_60 fw_bold mt-4"
                                     style="color: #526652; text-align: start;">
-                                    في هضاب عريض للخدمات العقارية، نؤمن بأن النجاح في القطاع العقاري يعتمد على الشفافية،
-                                    الالتزام، والمعرفة الدقيقة
-                                    بالسوق. تأسس مكتبنا ليكون شريكك الموثوق في تقديم حلول عقارية شاملة، تشمل البيع،
-                                    الشراء، الإيجار، والاستثمار.
-                                    ًا ً متخصصا يعمل بخبرات متنوعة في السوق العقاري السعودي، مما يمكننا من توفير
-                                    الاستشارات
-                                    نفتخر بامتلاكنا فريق
-                                    والحلول العقارية المصممة ً خصيصا لتلبية متطلبات عملائنا.
+                                    في هضاب عريض للخدمات العقارية، نؤمن أن النجاح في القطاع العقاري يُبنى على الشفافية، الالتزام، والمعرفة الدقيقة بالسوق.
+                                    تأسس مكتبنا ليكون شريكك الموثوق في تقديم خدمات عقارية متكاملة تشمل: البيع، الشراء، الإيجار، الاستثمار، الوساطة العقارية، وإدارة
+                                    الأملاك.
                                 </h2>
                             </div>
                         </div>
@@ -139,6 +135,7 @@
                                         <img style=" width: 100px; height: 100px" src="{{ $service->getIconUrl() }}"
                                              alt="{{ $service->title }}">
                                     </div>
+
                                     <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                         <a href="{{ route('service.details', $service) }}"
                                            class="d_iblock color_black hov_color"
@@ -235,62 +232,6 @@
     @endif
     <!-- /Partners -->
 
-    <!-- Testimonials -->
-    @if($testimonials->count())
-        <section class="testimonial-style-two p_relative sec-pad bg-color-1" style="direction: ltr;">
-            <div class="pattern-layer p_absolute"
-                 style="background-image: url({{ asset('assets/website/images/shape/shape-14.png') }});">
-            </div>
-            <div class="large-container">
-                <div class="sec-title centred mb_55">
-                    <h2 class="p_relative d_block fs_40 lh_60 fw_exbold" style="color: #001D00;">ماذا يقولون عنا</h2>
-                </div>
-                <div class="testimonial-inner p_relative pl_100 pr_100">
-                    <div class="two-item-carousel owl-carousel owl-theme owl-nav-none">
-                        @foreach($testimonials as $testimonial)
-                            <div class="testimonial-block-one mb_75">
-                                <div class="inner-box p_relative d_block bg_white pt_45 pr_40 pb_40 pl_40">
-                                    <div class="author-box p_relative d_block pl_80 pr_80 mb_35">
-                                        <div class="quote p_absolute t_0 r_0 fs_50"><i class="fal fa-quote-right"></i>
-                                        </div>
-                                        <figure class="author-thumb p_absolute l_0 t_0 w_60 h_60 b_radius_50"><img
-                                                src="{{ $testimonial->profileImageUrl() }}" alt=""></figure>
-                                        <h5 class="d_block fs_18 lh_30 fw_sbold">{{ $testimonial->client_name }}</h5>
-                                        <span
-                                            class="designation p_relative d_block fs_14 lh_20">{{ $testimonial->job_title }}</span>
-                                    </div>
-                                    <div class="text p_relative d_block">
-                                        <p class="lh_30">{{ $testimonial->testimonial }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </section>
-    @endif
-
-    <!-- /Testimonials -->
-
-
-    <section class="clients-section p_relative sec-pad centred" style="direction: ltr;">
-        <div class="large-container">
-            <div class="sec-title mb_30">
-                <h2 class="p_relative d_block fs_42 lh_52 mb_45 fw_exbold" style="color: #001D00;">عملاء يثقون بنا
-                </h2>
-            </div>
-            <ul class="six-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                @foreach($clients as $client)
-                    <li>
-                        <figure class="clients-logo">
-                            <img src="{{ $client->getLogoUrl() }}" alt="{{ $client->name }}">
-                        </figure>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    </section>
 
     <section class="feature-style-two p_relative sec-pad">
         <div class="intro text-center mb-5">
@@ -300,6 +241,7 @@
         </div>
         <div class="large-container">
             <div class="row clearfix">
+
                 <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
                     <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
                          data-wow-duration="1500ms">
@@ -311,7 +253,27 @@
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                    خبرة ممتدة ومعرفة متعمقة بالسوق العقاري المحلي.
+                                    خبرة كبيرة بالسوق
+                                </a>
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
+                    <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
+                         data-wow-duration="1500ms">
+                        <div
+                            class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
+                            <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
+                                <img src="{{ asset('assets/website/images/المسؤلية_والثقة.png') }}"
+                                     alt="الابتكار_والتطوير"/>
+                            </div>
+                            <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
+                                <a href="javascript:void(0)" class="d_iblock color_black hov_color"
+                                   style="color: #526652 !important">
+                                    مرخصة ومعتمدة
                                 </a>
                             </h3>
 
@@ -331,27 +293,7 @@
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                    قاعدة عملاء وشبكة شراكات قوية.
-                                </a>
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
-                    <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
-                         data-wow-duration="1500ms">
-                        <div
-                            class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
-                            <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
-                                <img src="{{ asset('assets/website/images/الابتكار_والتطوير.png') }}"
-                                     alt="الابتكار_والتطوير"/>
-                            </div>
-                            <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
-                                <a href="javascript:void(0)" class="d_iblock color_black hov_color"
-                                   style="color: #526652 !important">
-                                    التزام تام بالشفافية والسرعة في تنفيذ المعاملات.
+                                    الابتكار والتطوير
                                 </a>
                             </h3>
                         </div>
@@ -363,61 +305,68 @@
                         <div
                             class="inner-box p_relative text-center d_block bg_white b_shadow_6 pt_60 pr_45 pb_55 pl_45 tran_5">
                             <div class="icon-box p_relative d_block fs_100 lh_100 green_color mb_25 tran_5">
-                                <img src="{{ asset('assets/website/images/الابتكار_والتطوير.png') }}"
+                                <img src="{{ asset('assets/website/images/المسؤلية_والثقة.png') }}"
                                      alt="الابتكار_والتطوير"/>
                             </div>
                             <h3 class="d_block fs_20 lh_30 fw_exbold mb_25 pb_25">
                                 <a href="javascript:void(0)" class="d_iblock color_black hov_color"
                                    style="color: #526652 !important">
-                                    استخدام أحدث التقنيات وأدوات التسويق العقاري.
+                                    المسؤلية والثقة
                                 </a>
                             </h3>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
 
     <!-- Blogs -->
-        @if($blogs->count())
-            <section class="news-section p_relative sec-pad">
-                <div class="large-container">
-                    <div class="sec-title centred mb_55">
-                        <h2 class="p_relative d_block fs_50 lh_60 fw_exbold">مقالات تُفيدك</h2>
-                    </div>
-                    <div class="row clearfix">
-                        @foreach($blogs as $blog)
-                            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                                <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms"
-                                     data-wow-duration="1500ms">
-                                    <div class="inner-box bg-color-1" style="text-align: start;">
-                                        <div class="image-box">
-                                            <figure class="image">
-                                                <a href="{{ route('blogs.details', $blog) }}">
-                                                    <img src="{{ $blog->getThumbUrl() }}" alt="">
-                                                </a>
-                                            </figure>
-                                            <span
-                                                class="post-date">{{ strtoupper($blog->created_at->format('d M Y')) }}</span>
-                                                                                <span class="post-date">23 JUN 2021</span>
-                                        </div>
-                                        <div class="lower-content">
-                                            <h3><a href="{{ route('blogs.details', $blog) }}">{{ $blog->title }}</a>
-                                            </h3>
-                                            <p>{!! $blog->excerpt !!}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </section>
-        @endif
+    <!--{{--    @if($blogs->count())--}}-->
+    <!--{{--        <section class="news-section p_relative sec-pad">--}}-->
+    <!--{{--            <div class="large-container">--}}-->
+    <!--{{--                <div class="sec-title centred mb_55">--}}-->
+    <!--{{--                    <h2 class="p_relative d_block fs_50 lh_60 fw_exbold">مقالات تُفيدك</h2>--}}-->
+    <!--{{--                </div>--}}-->
+    <!--{{--                <div class="row clearfix">--}}-->
+    <!--{{--                    @foreach($blogs as $blog)--}}-->
+    <!--{{--                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">--}}-->
+    <!--{{--                            <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms"--}}-->
+    <!--{{--                                 data-wow-duration="1500ms">--}}-->
+    <!--{{--                                <div class="inner-box bg-color-1" style="text-align: start;">--}}-->
+    <!--{{--                                    <div class="image-box">--}}-->
+    <!--{{--                                        <figure class="image">--}}-->
+    <!--{{--                                            <a href="{{ route('blogs.details', $blog) }}">--}}-->
+    <!--{{--                                                <img src="{{ $blog->getThumbUrl() }}" alt="">--}}-->
+    <!--{{--                                            </a>--}}-->
+    <!--{{--                                        </figure>--}}-->
+    <!--{{--                                        <span--}}-->
+    <!--{{--                                            class="post-date">{{ strtoupper($blog->created_at->format('d M Y')) }}</span>--}}-->
+    <!--{{--                                        --}}{{--                                    <span class="post-date">23 JUN 2021</span>--}}-->
+    <!--{{--                                    </div>--}}-->
+    <!--{{--                                    <div class="lower-content">--}}-->
+    <!--{{--                                        <h3><a href="{{ route('blogs.details', $blog) }}">{{ $blog->title }}</a>--}}-->
+    <!--{{--                                        </h3>--}}-->
+    <!--{{--                                        <p>{!! $blog->excerpt !!}</p>--}}-->
+    <!--{{--                                    </div>--}}-->
+    <!--{{--                                </div>--}}-->
+    <!--{{--                            </div>--}}-->
+    <!--{{--                        </div>--}}-->
+    <!--{{--                    @endforeach--}}-->
+    <!--{{--                </div>--}}-->
+    <!--{{--            </div>--}}-->
+    <!--{{--        </section>--}}-->
+    <!--{{--    @endif--}}-->
     <!-- /Blogs -->
+
+
+    <section class="secrets sec-pad">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-8">
+                <img style="width: 100%; max-width: 100%" src="{{asset('assets/website/images/secrtes.jpeg')}}" alt="secrtes">
+            </div>
+        </div>
+    </section>
 
 
     @include('website.layouts.subscribe')

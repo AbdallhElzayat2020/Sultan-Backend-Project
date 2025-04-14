@@ -10,6 +10,11 @@ enum PropertyType: string
 
     case VILLA = 'villa';
     case APARTMENT = 'apartment';
+    case EARTH = 'earth';
+    case EARTH2 = 'earth2';
+
+//    public const EARTH = 'earth';
+//    public const EARTH2 = 'earth2';
 
     public function label(): string
     {

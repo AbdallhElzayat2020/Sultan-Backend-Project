@@ -23,23 +23,23 @@
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             @if(app()->getLocale() === 'ar')
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown">
-                                        <a>
-                                            {{ app()->getLocale() === 'ar' ? 'English' : 'العربية' }}
-                                            <i class="fas fa-chevron-down arrow_mob"></i>
-                                        </a>
-                                        <ul>
-                                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                                <li>
-                                                    <a class="" rel="alternate"
-                                                       hreflang="{{ $localeCode }}"
-                                                       href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                        {{ $properties['native'] }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
+                                    <!--<li class="dropdown">-->
+                                    <!--    <a>-->
+                                    <!--        {{ app()->getLocale() === 'ar' ? 'English' : 'العربية' }}-->
+                                    <!--        <i class="fas fa-chevron-down arrow_mob"></i>-->
+                                    <!--    </a>-->
+                                    <!--    <ul>-->
+                                    <!--        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)-->
+                                    <!--            <li>-->
+                                    <!--                <a class="" rel="alternate"-->
+                                    <!--                   hreflang="{{ $localeCode }}"-->
+                                    <!--                   href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">-->
+                                    <!--                    {{ $properties['native'] }}-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        @endforeach-->
+                                    <!--    </ul>-->
+                                    <!--</li>-->
 
                                     <li class="#"><a href="{{ route('contact') }}">تواصل معنا</a></li>
 
@@ -73,23 +73,23 @@
                                     </li>
                                     <li class="#"><a href="{{ route('contact') }}">تواصل معنا</a></li>
 
-                                    <li class=" dropdown">
-                                        <a>
-                                            {{ app()->getLocale() === 'ar' ? 'English' : 'العربية' }}
-                                            <i class="fas fa-chevron-down arrow_mob"></i>
-                                        </a>
-                                        <ul>
-                                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                                <li>
-                                                    <a rel="alternate"
-                                                       hreflang="{{ $localeCode }}"
-                                                       href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                        {{ $properties['native'] }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
+                                    <!--<li class=" dropdown">-->
+                                    <!--    <a>-->
+                                    <!--        {{ app()->getLocale() === 'ar' ? 'English' : 'العربية' }}-->
+                                    <!--        <i class="fas fa-chevron-down arrow_mob"></i>-->
+                                    <!--    </a>-->
+                                    <!--    <ul>-->
+                                    <!--        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)-->
+                                    <!--            <li>-->
+                                    <!--                <a rel="alternate"-->
+                                    <!--                   hreflang="{{ $localeCode }}"-->
+                                    <!--                   href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">-->
+                                    <!--                    {{ $properties['native'] }}-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        @endforeach-->
+                                    <!--    </ul>-->
+                                    <!--</li>-->
                                 </ul>
                             @endif
 

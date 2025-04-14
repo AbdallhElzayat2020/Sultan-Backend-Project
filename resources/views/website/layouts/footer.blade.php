@@ -20,9 +20,16 @@
                                 العقارية بكل دقة واحترافية
                             </p>
                         </div>
+                        <!-- <div class="location-box">
+                            <div class="icon-box"><i class="fal fa-map-marker-alt"></i></div>
+                            <p>52 Serina Avenue, Highland Mills New York 10930 - USA</p>
+                        </div> -->
+                        <!-- <div class="support-box">
+                            <div class="icon-box"><i class="far fa-phone"></i></div>
+                            <h3><a href="tel:1800222155">+966 54 111 1426</a></h3>
+                        </div> -->
                     </div>
                 </div>
-
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget links-widget">
                         <div class="widget-title">
@@ -31,15 +38,14 @@
                         <div class="widget-content">
                             <ul class="links-list clearfix">
                                 <li><a href="#">تسويق العقارات</a></li>
-                                <li><a href="#"> إدارة الأملاك </a></li>
-                                <li><a href="#"> الاستشارات العقارية</a></li>
-                                <li><a href="#">تأجير الوحدات</a></li>
-                                <li><a href="#">بيع وشراء العقارات</a></li>
+                                <li><a href="#">إدارة الأملاك
+                                        <li><a href="#">الاستشارات العقارية</a></li>
+                                        <li><a href="#">تأجير الوحدات</a></li>
+                                        <li><a href="#">بيع وشراء العقارات</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget links-widget">
                         <div class="widget-title">
@@ -47,11 +53,9 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list clearfix">
-                                <li><a href="#">الرئيسية</a></li>
-                                <li><a href="#">من نحن</a></li>
-                                <li><a href="#">اهم المقالات</a></li>
-                                <li><a href="#">العروض العقارية</a></li>
-                                <li><a href="#">للتوظيف</a></li>
+                                <li><a href="{{ route('home') }}">الرئيسية</a></li>
+                                <li><a href="{{ route('about') }}">من نحن</a></li>
+                                <li><a href="{{ route('offers') }}">العروض العقارية</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,10 +63,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget links-widget">
                         <div class="widget-title">
-                            <h3>فروعنا</h3>
+                            <h3>الفرع الرئيسي</h3>
                         </div>
                         <div class="location-box">
-                            <p>المكتب الرئيسي السعودية </p>
+                            <a href="https://maps.app.goo.gl/7Ji4FBaLXucCG9DX8" target="_blank">موقعنا</a>
                         </div>
 
                     </div>
@@ -72,7 +76,7 @@
         <div class="footer-bottom clearfix centred">
             <div class="copyright">
                 {{--                <p>   &copy; 2025</p>--}}
-                <p>البرمجة والتصميم بوراسطة <a target="_blank" href="https://awali.com.sa/"> عبدالله الزيات</a></p>
+                <p>البرمجة والتصميم بواسطة <a target="_blank" href="https://awali.com.sa/">اولي التفاعلية</a></p>
             </div>
 
             <ul class="footer-social">

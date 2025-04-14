@@ -109,6 +109,7 @@
                 <div
                     class="col-lg-9 d-flex align-items-center justify-content-center col-md-12 col-sm-12 form-column">
                     <div class="form-inner d-flex align-items-center justify-content-center">
+
                         <form method="post" action="{{ route('contact.store') }}" id="contact-form" class="default-form">
                             @csrf
                             <div class="row clearfix">

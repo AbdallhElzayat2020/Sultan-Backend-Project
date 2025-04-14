@@ -116,7 +116,13 @@
                             <i class="fa-solid fa-phone" style="color: #fff; font-size: 25px;"></i>
                         </div>
                         <p class="color_white">وأبشر بطيبة الخاطر</p>
-                        <h3 class="color_white fw_bold mt-2">{{ $service->contact_number }}</h3>
+
+
+                        <h3 class="color_white fw_bold mt-2">
+                            <a class="color_white fw_bold mt-2" href="https://wa.me/966557333348"
+                               target="_blank">{{ $service->contact_number }}</a>
+                        </h3>
+
                     </div>
                     {{--                    <div class="button mt-4 text-center" style="background-color:#526652 ; padding: 10px;">--}}
                     {{--                        <a href="" class="color_white text-white">--}}
@@ -332,7 +338,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>البريد الالكتروني</h3>
-                    <p>info@trest.com</p>
+                    <a>info@hdab-sa.com</a>
                 </div>
 
                 <!-- Card 2 -->
@@ -340,8 +346,8 @@
                     <div class="icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <h3>ارقام الهاتف</h3>
-                    <p>543545<br>4535435<br>435454</p>
+                    <h3>رقم الهاتف</h3>
+                    <p>966557333348</p>
                 </div>
 
                 <!-- Card 3 -->
@@ -349,9 +355,9 @@
                     <div class="icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>فروع الشركة</h3>
+                    <h3>موقعنا</h3>
                     <p>
-                        fsdfsfsdfsd
+                        حي عريض الرياض
                     </p>
                 </div>
             </div>

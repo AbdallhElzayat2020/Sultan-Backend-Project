@@ -124,7 +124,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                     <div class="image-box p_relative d_block pr_120 pb_150">
                         <figure class="image image-1 p_relative d_block z_1 paroller"><img
-                                src="{{ asset('assets/website/images/hedab/1.png') }}" alt="qudrah IMG">
+                                src="{{ asset('assets/website/images/hedab_master/1.png') }}" alt="qudrah IMG">
                         </figure>
                     </div>
                 </div>
@@ -171,6 +171,7 @@
         </div>
         <div class="large-container">
             <div class="row clearfix">
+
 
                 <div class="col-lg-3 col-md-6 col-sm-12 feature-block mt-3">
                     <div class="feature-block-two wow fadeInUp animated" data-wow-delay="00ms"
@@ -247,6 +248,7 @@
                         </div>
                     </div>
                 </div>
+
 
 
             </div>
